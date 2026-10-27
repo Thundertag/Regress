@@ -1,0 +1,87 @@
+.desmos-calculator {
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+
+}
+.practice-page {
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.practice-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+  align-items: start;
+}
+
+.calculator-panel,
+.question-panel {
+  min-width: 0;
+}
+
+.question-panel {
+  padding: 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.question-prompt {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  margin: 24px 0;
+}
+
+.question-panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.question-panel input {
+  padding: 12px;
+  font-size: 16px;
+}
+
+.question-panel button {
+  padding: 12px 18px;
+  cursor: pointer;
+}
+.submit-button {
+    margin-left:10px;
+}
+
+.next-button{
+    margin-top:10px;
+}
+
+.correct {
+  color: #16a34a;
+}
+
+.incorrect {
+  color: #dc2626;
+}
+
+@media (max-width: 800px) {
+  .practice-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.practice-title{
+    font-family:'Brush Script MT';
+    font-style: italic;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+}
+.practice{
+    font-family: 'Brush Script MT'; 
+}
